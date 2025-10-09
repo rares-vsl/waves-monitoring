@@ -1,0 +1,44 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+
+# Local configuration files
+local.properties
+
+# IDE configuration (IntelliJ IDEA/Android Studio)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDEA cache and settings
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/dictionaries/
+.idea/httpRequests/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# APK, dex, and class files
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Node.js dependencies
+node_modules/
+
+# Miscellaneous
+*.log
+*.jks
+*.keystore
+
+# Proguard and NDK
+proguard-rules.pro
+ndkBuild/
