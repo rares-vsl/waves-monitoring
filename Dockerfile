@@ -9,7 +9,7 @@ COPY . .
 RUN gradle build --no-daemon
 
 # Stage 2: Runtime with slim JDK
-FROM openjdk:25-jdk-slim
+FROM openjdk:26-jdk-slim
 WORKDIR /app
 
 COPY --from=builder /usr/src/app/build/libs/*.jar app.jar
