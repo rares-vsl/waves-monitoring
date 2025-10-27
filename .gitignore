@@ -42,3 +42,5 @@ node_modules/
 # Proguard and NDK
 proguard-rules.pro
 ndkBuild/
+
+.env

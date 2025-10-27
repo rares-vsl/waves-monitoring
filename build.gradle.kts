@@ -26,6 +26,8 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kmongo.coroutine.serialization)
+    implementation(libs.influxdb.client.kotlin)
+    implementation(libs.dotenv.kotlin)
 }
 
 gitSemVer {
@@ -43,4 +45,9 @@ tasks.named<Test>("test") {
 
 tasks.named("build") {
     dependsOn("ktlintFormat", "detekt", "test")
+}
+
+application {
+    mainClass.set("io.ktor.server.netty.EngineMain")
+    applicationDefaultJvmArgs = listOf("-Dio.ktor.development=true")
 }

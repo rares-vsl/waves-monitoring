@@ -18,5 +18,8 @@
       "@semantic-release/changelog",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0"
   }
 }
